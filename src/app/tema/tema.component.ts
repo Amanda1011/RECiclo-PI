@@ -34,7 +34,7 @@ export class TemaComponent implements OnInit {
       this.listaTemas = resp
     })
   }
-/* verificar erro ao postar*/
+  
   cadastrar(){
     this.temaService.postTema(this.tema).subscribe((resp: Tema)=> {
       this.tema = resp
