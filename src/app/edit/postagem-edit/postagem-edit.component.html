@@ -24,7 +24,7 @@
 
             <div class="form-group">
                 <label for="texto">Escolha um tema ou <a routerLink='/tema' data-dismiss="modal"> Cadastre um novo</a> </label>
-                <select class="form-control" name="tema" id="tema" [(ngModel)]='idTema' (change) = 'findByIdTema()'>
+                <select class="form-control" name="tema" id="tema" [(ngModel)]='idTema' (change)='findByIdTema()'>
                     <option  *ngFor='let item of listaTemas' value="{{item.id}}">
                         {{item.descricao}}
                     </option>

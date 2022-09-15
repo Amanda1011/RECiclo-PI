@@ -16,7 +16,15 @@ export class MenuComponent implements OnInit {
   private router: Router
 
   ngOnInit() {
+    this.validarFoto()
   }
+  validarFoto(){
+
+    if(environment.foto == null){
+           this.foto = 'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__480.png'
+    }
+ }
+
 
   sair(){
     this.router.navigate(['/entrar'])

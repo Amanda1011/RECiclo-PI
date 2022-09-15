@@ -18,7 +18,6 @@ export class TemaEditComponent implements OnInit {
     private router: Router,
     private route: ActivatedRoute
   ) { }
-  
   ngOnInit() {
     if(environment.token == ''){
       alert('Sua seção expirou, faça o login novamente.')
@@ -37,4 +36,13 @@ export class TemaEditComponent implements OnInit {
     })
   }
 
+  atualizar(){
+    this.temaService.putTema(this.tema).subscribe((resp: Tema)=>{
+      this.tema = resp
+      alert('Tema atualizado com sucesso!')
+      this.router.navigate(['/tema'])
+    })
+  }
+
 }
+
