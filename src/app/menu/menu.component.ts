@@ -16,7 +16,8 @@ export class MenuComponent implements OnInit {
   constructor() { }
   private router: Router
 
-  ngOnInit() {
+  ngOnInit() 
+  {
     this.validarFoto()
   }
   validarFoto(){
