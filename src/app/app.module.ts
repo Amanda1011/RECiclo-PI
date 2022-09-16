@@ -20,6 +20,7 @@ import { PostagemEditComponent } from './edit/postagem-edit/postagem-edit.compon
 import { PostagemDeleteComponent } from './delete/postagem-delete/postagem-delete.component';
 import { UserEditComponent } from './edit/user-edit/user-edit.component';
 import { AlertasComponent } from './alertas/alertas.component';
+import { OrderModule } from 'ngx-order-pipe';
 
 
 @NgModule({
@@ -44,7 +45,8 @@ import { AlertasComponent } from './alertas/alertas.component';
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    ModalModule.forRoot()
+    ModalModule.forRoot(),
+    OrderModule
 
   ],
   providers: [{
