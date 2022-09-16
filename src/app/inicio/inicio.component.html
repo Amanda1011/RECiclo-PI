@@ -46,6 +46,16 @@
     <div class="tab-content mt-5" id="nav-tabContent">
 
         <div class="tab-pane fade show active" id="todasPostagens" role="tabpanel" aria-labelledby="nav-todasPostagens-tab">
+
+            <div class="row d-flex justify-content-center mt-5 mb-5">
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="titulo" placeholder="Digite um título para pesquisar" [(ngModel)] = 'tituloPost'(keyup)='findByTituloPostagem()'>
+
+                    </div>
+                </div>
+
+            </div>
             
             <div class="card-columns">
                 <div class="card text-center" 
@@ -65,6 +75,16 @@
 
 
         <div class="tab-pane fade" id="minhasPostagens" role="tabpanel" aria-labelledby="nav-minhasPostagens-tab">
+
+            <div class="row d-flex justify-content-center mt-5 mb-5">
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="titulo" placeholder="Digite um tema para pesquisar" [(ngModel)] = 'nomeTema'(keyup)='findByNomeTema()'>
+
+                    </div>
+                </div>
+
+            </div>
            
             <div class="card-columns">
                 <div class="card text-center" 
