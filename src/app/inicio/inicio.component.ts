@@ -23,7 +23,7 @@ export class InicioComponent implements OnInit {
   tema:Tema = new Tema()
   listaTemas: Tema[]
   idTema: number
-  nomeTema: string[]
+  nomeTema: string
 
   user:User = new User()
   idUser = environment.id
@@ -105,7 +105,6 @@ export class InicioComponent implements OnInit {
   }
   
   findByNomeTema(){
-
     if(this.nomeTema == ''){
       this.getAllTemas()
     } else {
@@ -113,6 +112,5 @@ export class InicioComponent implements OnInit {
         this.listaTemas = resp
       })
     }
-
   }
 }
