@@ -77,15 +77,7 @@
 
         <div class="tab-pane fade" id="minhasPostagens" role="tabpanel" aria-labelledby="nav-minhasPostagens-tab">
 
-            <div class="row d-flex justify-content-center mt-5 mb-5">
-                <div class="col-md-4">
-                    <div class="form-group">
-                        <input type="text" class="form-control" id="titulo" placeholder="Digite um tema para pesquisar" [(ngModel)] = 'nomeTema'(keyup)='findByNomeTema()'>
-
-                    </div>
-                </div>
-
-            </div>
+            
            
             <div class="card-columns">
                 <div class="card text-center" 
@@ -109,16 +101,27 @@
 
 
         <div class="tab-pane fade" id="postagemTema" role="tabpanel" aria-labelledby="nav-postagemTema-tab">
-            
-            <div class="card-columns" *ngFor='let tema of listaTemas'>
+           
+            <div class="row d-flex justify-content-center mt-5 mb-5">
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="titulo" placeholder="Digite um tema para pesquisar" 
+                        [(ngModel)]='nomeTema' (keyup)='findByNomeTema()'>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="card-columns" *ngFor="let tema of listaTemas">
                 <div class="card text-center" 
-                *ngFor='let item of tema.postagem | orderBy : key : reverse'> 
+                *ngFor='let item of tema.postagem | orderBy : key : reverse'>
                     <div class="card-body">
                         <img class="tamanho-foto" src="{{item.foto}}" alt="">
                       <h5 class="card-title mt-0">{{item.titulo}}</h5>
+                      <small class="text-muted">Tema: {{tema.descricao}}</small>
                       <p class="card-text mt-3">{{item.texto}}</p>
                       <p class="card-text"><small class="text-muted">{{item.data | date: 'dd/MM/yyyy'}} às {{item.data | date: 'HH:mm'}}</small></p>
-
+                    
                       <p class="card-text"><small class="text-muted">by: {{item.usuario.nome}}</small></p>
                     </div>
                   </div>
@@ -148,7 +151,7 @@
 
                 <div class="form-group">
                     <label for="foto">Foto</label>
-                    <input [(ngModel)]='postagem.foto'  type="text" class="form-control" id="foto" placeholder="Digite o Link da foto">
+                    <input [(ngModel)]='postagem.foto'  type="text" class="form-control" id="foto" placeholder="Link da foto obrigatório">
                 </div>
 
                 <div class="form-group">

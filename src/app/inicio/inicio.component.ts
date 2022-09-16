@@ -58,8 +58,7 @@ export class InicioComponent implements OnInit {
   }
 
   findByIdTema(){
-    this.temaService.getByIdTema(this.idTema).subscribe((resp:Tema)=>
-    {
+    this.temaService.getByIdTema(this.idTema).subscribe((resp:Tema)=> {
       this.tema = resp
     })
   }
