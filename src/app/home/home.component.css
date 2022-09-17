@@ -1,0 +1,35 @@
+.margin{
+    margin-top: 50px;
+}
+.img{
+    width: 20%;
+   
+    margin-top: 50px;
+}
+.recicle {
+    margin-top: 50px;
+
+}
+.card{
+    width: 80%;
+}
+.text{
+    margin-top: 100px;
+}
+.card2{
+    margin-top: 100px;
+}
+.tex2{
+    padding-left: 15px;
+}
+.rodape{
+    background-image: url('https://i.imgur.com/ogEmXpe.png');
+    height: 450px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+}
+.branco{
+    color: azure;
+    
+}
