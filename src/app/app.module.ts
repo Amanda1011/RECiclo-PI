@@ -21,6 +21,7 @@ import { PostagemDeleteComponent } from './delete/postagem-delete/postagem-delet
 import { UserEditComponent } from './edit/user-edit/user-edit.component';
 import { AlertasComponent } from './alertas/alertas.component';
 import { OrderModule } from 'ngx-order-pipe';
+import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
@@ -38,7 +39,8 @@ import { OrderModule } from 'ngx-order-pipe';
     PostagemEditComponent,
     PostagemDeleteComponent,
     UserEditComponent,
-    AlertasComponent
+    AlertasComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
