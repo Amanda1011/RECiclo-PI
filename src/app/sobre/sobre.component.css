@@ -1,5 +1,5 @@
 #img-bg {
-    background-image: url('https://i.imgur.com/8B51VPz.jpg%27');
+    background-image: url('https://i.imgur.com/p1WUMVp.png');
     min-height: 695px;
     background-position: center;
     background-repeat: no-repeat;
@@ -9,4 +9,5 @@
 p {
     font-size: 20px;
     color: blue;
+    background-color: #F79292;
 }
