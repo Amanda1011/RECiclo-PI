@@ -1,0 +1,12 @@
+#img-bg {
+    background-image: url('https://i.imgur.com/dT0OPBy.png');
+    height: 380px;
+    width: 350px;
+    margin-bottom: 100px;
+    background-size: cover;
+
+}
+
+.mtop{
+    margin-top: 200px;
+}

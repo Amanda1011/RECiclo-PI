@@ -1,20 +1,20 @@
 <div class="container-fluid">
 
-    <div class="row bg-primary d-flex align-items-center">
+    <div class="row bg d-flex align-items-center">
         <div class="col-md-6">
 
             <div class="row d-flex justify-content-center">
                 <div class="col-md-6">
-                    <h1 class="fs-54">Seja bem vindo(a)!</h1>
+                    <h1 class="fs-54">Bem-vindo(a)!</h1>
                     <h5 class="fs-18">Reduza, Reuse e REcicle</h5>
                 </div>
             </div>
 
-            <div class="row d-flex justify-content-center mt-3 mb-5">
+            <div class="row d-flex justify-content-center mr-2 mt-3 mb-5">
                 <div class="col-md-6">
-                    <button class="btn btn-light mr-2 " data-toggle="modal" data-target="#novaPostagem">Nova
+                    <button class="btn btn-danger mr-2 " data-toggle="modal" data-target="#novaPostagem">Nova
                         postagem</button>
-                    <a class="btn btn-outline-light" href="#postagens">Ver postagem</a>
+                    <a class="btn btn-outline-danger textcolor" href="#postagens">Ver postagem</a>
 
                 </div>
 
@@ -23,7 +23,7 @@
         </div>
 
         <div class="col-md-6 d-flex justify-content-center">
-            <img src="https://i.imgur.com/yG4vm7C.png" alt="" width="500px" height="500px">
+            <img src="https://i.imgur.com/4gkfRuD.png" alt="" width="500px" height="500px">
         </div>
     </div>
 
@@ -127,12 +127,15 @@
                   </div>
             </div>
 
-            
         </div>
+        <br>
+        <hr>
+        <br>
     </div>
-
+    <div class="col-md-6 d-flex justify-content-right">
+        <iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.375158186646!2d-34.87531063523498!3d-8.063161666928158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab18a48ed72541%3A0xf5636ba795e00cd4!2sPra%C3%A7a%20Bar%C3%A3o%20do%20Rio%20Branco%20-%20Recife%2C%20PE%2C%2050020-360!5e0!3m2!1spt-PT!2sbr!4v1661541424527!5m2!1spt-PT!2sbr" width="450" height="300" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
 </div>
-
 
 
 
@@ -140,14 +143,14 @@
 <!-- Modal -->
 <div class="modal fade" id="novaPostagem" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
+        <div class="modal-content bgmodal font-weight-bold">
             <div class="modal-header">
                 <h5 class="modal-title" id="TituloModalCentralizado">Nova Postagem</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <div class="modal-body">
+            <div class="modal-body font-weight-bold">
 
                 <div class="form-group">
                     <label for="foto">Foto</label>
@@ -175,6 +178,7 @@
                 </div>
 
             </div>
+
             <div class="modal-footer">
                 <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
                 <button type="button" class="btn btn-success" (click)='publicar()' data-dismiss="modal">Publicar</button>

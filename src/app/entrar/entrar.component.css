@@ -9,3 +9,38 @@
 .bg {
     background-color: #fae6a7;
 }
+
+.font-family{
+    --font-family: "Verdana", Times, serif
+}
+
+.formulario {
+    max-width: 500px;
+    height: 400px;
+    min-height: auto;
+    border: 1px solid rgb(207, 191, 191);
+    border-radius: 15px;
+    box-shadow: 1px 10px 20px rgb(205, 186, 186);
+}  
+
+.btn-gradient {
+    background-image: linear-gradient(to right, #599be6 0%, #eed26b  100%);
+    margin: 10px;
+    padding: 10px 30px;
+    height: 50px;
+    width: 170%;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 10px #eee;
+    border-radius: 10px;
+    border-color: #215bd870;
+    display: block;
+  }
+
+  .btn-gradient:hover {
+    background-position: right center; /* para mudar a direção */
+    color: rgba(20, 19, 18, 0.952);
+    text-decoration: none;
+  }

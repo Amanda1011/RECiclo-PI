@@ -43,7 +43,7 @@ export class InicioComponent implements OnInit {
     window.scroll(0,0)
 
     if(environment.token == ''){
-    alert('Sua seção expirou, faça o login novamente.')
+    this.alertas.showAlertInfo('Sua seção expirou, faça o login novamente.')
     this.router.navigate(['/entrar'])
     }
 
