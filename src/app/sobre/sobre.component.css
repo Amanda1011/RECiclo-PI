@@ -6,8 +6,12 @@
     background-size: cover;
 }
 
-p {
+text {
     font-size: 20px;
-    color: blue;
+    color: rgb(5, 5, 21);
     background-color: #F79292;
+    
 }
+
+
+

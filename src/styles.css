@@ -11,3 +11,7 @@ html {
 .fs-18 {
     font-size: 18pt;
 }
+
+.justify-text{
+    text-align: justify;
+}

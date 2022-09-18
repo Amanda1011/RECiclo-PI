@@ -1,12 +1,16 @@
 <div class="container-fluid bg">
 
+    <a class="m-0 font-weight-bold text-dark" routerLink="/home" class="text-dark text-left">
+        <i class="fa fa-home fa-lg" aria-hidden="true"></i>Home
+      </a>
+
     <div class="row d-flex align-items-center">
 
         <div class="col-md-6">
             <div class="row d-flex justify-content-center">
-                <div class="col-md-6">
+                <div class="col-md-6 mt-2 formulario">
 
-                    <h1 class="text-center mb-3">Entrar</h1>
+                    <h1 class="text-center font-family mt-3 mb-3">Entrar</h1>
 
                     <div class="form-group">
                         <label for="usuario">Usuário</label>
@@ -21,7 +25,7 @@
                     </div>
 
                     <div class="d-flex justify-content-center mt-3">
-                        <button type="submit" class="btn btn-info" (click)="entrar()">Entrar</button>
+                        <button type="submit" class="btn-gradient" (click)="entrar()">Entrar</button>
                     </div>
 
                     <hr class="mt-5 mb-5">

@@ -1,14 +1,20 @@
 <div class="container mb-5 mt-5">
-<div class="row">
-<div class="col-md-12">
-    <h1 class="text-center">Perfil do usuário</h1>
+
 
 </div>
 
-</div>
 
-<div class="row d-flex justify-content-center">
-    <div class="col-md-10">
+<div class="row d-flex justify-content-right">
+
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="text-center">Perfil do usuário</h1>
+        </div>
+
+    
+    <div class="col-md-4" id="img-bg"></div>
+
+    <div class="col-md-8">
 
         <div class="form-group">
             <label for="nome">Nome</label>
@@ -50,7 +56,7 @@
             </select>
         </div>
 
-        <div class="d-flex justify-content-center mt-4">
+        <div class="d-flex justify-content-center mt-5 mb-5">
             <button type="submit" class="btn btn-danger mr-4" routerLink='/inicio'>Cancelar
              </button>
             <button type="submit" class="btn btn-success" (click)='atualizar()'>Atualizar</button>
