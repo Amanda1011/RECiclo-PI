@@ -26,8 +26,8 @@ export class TemaService {
   }
   
 
-  getByNomeTema(descricao: string): Observable<Tema[]>{
-    return this.http.get<Tema[]>(`hhttps://reciclopi.herokuapp.com/swagger-ui/index.html/tema/descricao/${descricao}`, this.token)
+  getByNomeTema(titulo: string): Observable<Tema[]>{
+    return this.http.get<Tema[]>(`https://reciclopi.herokuapp.com/swagger-ui/index.html/tema/titulo/${titulo}`, this.token)
   }
 
   postTema(tema: Tema): Observable<Tema>{
