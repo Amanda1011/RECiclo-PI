@@ -63,7 +63,7 @@
                     <div class="card-body">
                         <img class="tamanho-foto" src="{{item.foto}}" alt="">
                       <h5 class="card-title mt-0">{{item.titulo}}</h5>
-                      <small class="text-muted">Tema: {{item.tema.descricao}}</small>
+                      <small class="text-muted">Tema: {{item.tema.titulo}}</small>
                       <p class="card-text mt-3">{{item.texto}}</p>
                       <p class="card-text"><small class="text-muted">{{item.data | date: 'dd/MM/yyyy'}} às {{item.data | date: 'HH:mm'}}</small></p>
                     
@@ -85,7 +85,7 @@
                     <div class="card-body">
                         <img class="tamanho-foto" src="{{item.foto}}" alt="">
                       <h5 class="card-title mt-0">{{item.titulo}}</h5>
-                      <small class="text-muted">Tema: {{item.tema.descricao}}</small>
+                      <small class="text-muted">Tema: {{item.tema.titulo}}</small>
                       <p class="card-text mt-3">{{item.texto}}</p>
                       <p class="card-text"><small class="text-muted">{{item.data | date: 'dd/MM/yyyy'}} às {{item.data | date: 'HH:mm'}}
                       </small></p>
@@ -118,7 +118,7 @@
                     <div class="card-body">
                         <img class="tamanho-foto" src="{{item.foto}}" alt="">
                       <h5 class="card-title mt-0">{{item.titulo}}</h5>
-                      <small class="text-muted">Tema: {{tema.descricao}}</small>
+                      <small class="text-muted">Tema: {{tema.titulo}}</small>
                       <p class="card-text mt-3">{{item.texto}}</p>
                       <p class="card-text"><small class="text-muted">{{item.data | date: 'dd/MM/yyyy'}} às {{item.data | date: 'HH:mm'}}</small></p>
                     
@@ -176,7 +176,7 @@
                     <label for="texto">Escolha um tema ou <a routerLink='/tema' data-dismiss="modal"> Cadastre um novo</a> </label>
                     <select class="form-control" name="tema" id="tema" [(ngModel)]='idTema' (change) = 'findByIdTema()'>
                         <option  *ngFor='let item of listaTemas' value="{{item.id}}">
-                            {{item.descricao}}
+                            {{item.titulo}}
                         </option>
                     </select>
 
