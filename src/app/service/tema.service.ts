@@ -18,27 +18,27 @@ export class TemaService {
   }
 
   getAllTema(): Observable<Tema[]>{
-    return this.http.get<Tema[]>('https://reciclopi.herokuapp.com/swagger-ui/index.html/tema', this.token)
+    return this.http.get<Tema[]>('https://reciclopi.herokuapp.com/tema', this.token)
   }
 
   getByIdTema(id:number): Observable<Tema>{
-    return this.http.get<Tema>(`https://reciclopi.herokuapp.com/swagger-ui/index.html/tema/${id}`, this.token)
+    return this.http.get<Tema>(`https://reciclopi.herokuapp.com/tema/${id}`, this.token)
   }
   
 
   getByNomeTema(titulo: string): Observable<Tema[]>{
-    return this.http.get<Tema[]>(`https://reciclopi.herokuapp.com/swagger-ui/index.html/tema/titulo/${titulo}`, this.token)
+    return this.http.get<Tema[]>(`https://reciclopi.herokuapp.com/tema/titulo/${titulo}`, this.token)
   }
 
   postTema(tema: Tema): Observable<Tema>{
-    return this.http.post<Tema>('https://reciclopi.herokuapp.com/swagger-ui/index.html/tema', tema, this.token)
+    return this.http.post<Tema>('https://reciclopi.herokuapp.com/tema', tema, this.token)
   }
 
   putTema(tema: Tema): Observable<Tema>{
-    return this.http.put<Tema>('https://reciclopi.herokuapp.com/swagger-ui/index.html/tema', tema, this.token)
+    return this.http.put<Tema>('https://reciclopi.herokuapp.com/tema', tema, this.token)
   }
   deleteTema(id: number){
-    return this.http.delete(`https://reciclopi.herokuapp.com/swagger-ui/index.html/tema/${id}`, this.token)
+    return this.http.delete(`https://reciclopi.herokuapp.com/tema/${id}`, this.token)
   }
 
 
