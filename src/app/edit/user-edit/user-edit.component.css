@@ -6,6 +6,10 @@
     background-size: cover;
 }
 
+.bg{
+  background-color: #90caf9;
+}
+
 .font-edit{
     font-family: "Lucida Console", "Lucida Console", monospace;
   }
