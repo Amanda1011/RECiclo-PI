@@ -1,11 +1,60 @@
 #img-bg {
-    background-image: url('https://i.imgur.com/pk38lWq.png');
-    min-height: 695px;
+    background-image: url('https://i.imgur.com/MkwGzVW.png');
+    height: 695px;
+    width: 450px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .bg {
-    background-color: #d1f6f9;
+    background-color: #90caf9;
 }
+
+.btn-gradcancelar {
+    background-image: linear-gradient(to right, #ef1a1a 0%, #e56b6b  100%);
+    margin: 10px;
+    padding: 10px 30px;
+    height: 50px;
+    width: 170%;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 10px #eee;
+    border-radius: 10px;
+    border-color: #215bd870;
+    display: block;
+  }
+
+  .btn-gradcancelar:hover {
+    background-position: right center; /* para mudar a direção */
+    color: #ef1a1a(20, 19, 18, 0.952);
+    text-decoration: none;
+  }
+
+  .btn-gradcadastrar {
+    background-image: linear-gradient(to right, #599be6 0%, #3b53da  100%);
+    margin: 10px;
+    padding: 10px 30px;
+    height: 50px;
+    width: 170%;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 10px #eee;
+    border-radius: 10px;
+    border-color: #215bd870;
+    display: block;
+  }
+
+  .btn-gradcadastrar:hover {
+    background-position: right center; /* para mudar a direção */
+    color: rgba(20, 19, 18, 0.952);
+    text-decoration: none;
+  }
+
+  .fontcadastrar{
+    font-family: "Lucida Console", "Lucida Console", monospace;
+  }

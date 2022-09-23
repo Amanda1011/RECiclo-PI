@@ -1,48 +1,100 @@
-.img{
+.img {
     width: 20%;
-   
+
     margin-top: 50px;
 }
+
 .recicle {
     margin-top: 50px;
 
 }
-.card{
+
+.card {
     width: 80%;
 }
-.text{
+
+.text {
     margin-left: px;
 }
-.card2{
+
+.card2 {
     margin-top: 100px;
 }
-.tex2{
+
+.tex2 {
     padding-left: 15px;
 }
-.rodape{
+
+.rodape {
     background-image: url('https://i.imgur.com/ogEmXpe.png');
     height: 450px;
     background-size: cover;
     background-repeat: no-repeat;
     opacity: 0.8;
 }
-.black{
+
+.legendarodape {
     color: rgb(252, 249, 248);
 }
 
-.frase{
+.frase {
     position: relative;
     left: 180px;
     top: 400px;
 }
 
-.marktext{
+.marktext {
     background-color: #FAE6A7;
 }
 
-.jumbotroncolor{
+.jumbotroncolor {
     background-color: #90caf9;
 }
-body{
-  background-color: #b3d0e8;
+
+body {
+    background-color: #FAE6A7;
+}
+
+.bgfooter2 {
+    background-color: #FAE6A7;
+}
+
+.img-fluid {
+    height: 150px;
+    width: 150px;
+}
+
+.textnavbar {
+    color: black;
+}
+
+ul.social-network{
+    list-style: none;
+    padding: 0;
+}
+
+ul.social-network li{
+    display: inline;
+    margin: 0;
+    padding: 5px;
+}
+
+.fa-linkedin{
+    font-size: 35pt;
+    color: white;
+    padding: 10px;
+}
+
+.fa-github{
+    font-size: 35pt;
+    color: #171515;
+    padding: 10px;
+}
+
+.fa-linkedin-square:hover{
+    color: #0A66C2;
+}
+
+.fa-github-square:hover{
+    color: #171515;
 }

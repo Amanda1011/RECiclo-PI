@@ -6,12 +6,30 @@
     background-size: cover;
 }
 
-text {
-    font-size: 20px;
-    color: rgb(5, 5, 21);
-    background-color: #F79292;
+.text {
+     font-family: "Lucida Console", "Lucida Console", monospace;
+     font-size: 18px;
     
 }
 
+.bg{
+    background-color: #90caf9;
+}
 
+.img-backend {
+    background-image: url('https://i.imgur.com/FJo2T5q.png');
+    height: 140px ;
+    width: 140px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
+.img-frontend {
+    background-image: url('https://i.imgur.com/0imVdnv.png');
+    height: 150px ;
+    width: 150px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
