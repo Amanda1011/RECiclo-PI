@@ -1,0 +1,53 @@
+.font-edit{
+    font-family: "Lucida Console", "Lucida Console", monospace;
+  }
+
+  .bg{
+    background-color: #90caf9;
+  }
+
+  
+
+  .btn-gradnao {
+    background-image: linear-gradient(to right, #ef1a1a 0%, #e56b6b  100%);
+    margin: 10px;
+    padding: 10px 10px;
+    height: 50px;
+    width: 80px;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 10px #eee;
+    border-radius: 30px;
+    border-color: #215bd870;
+    display: block;
+  }
+
+  .btn-gradnao:hover {
+    background-position: right center; /* para mudar a direção */
+    color: #ef1a1a(20, 19, 18, 0.952);
+    text-decoration: none;
+  }
+
+  .btn-gradsim {
+    background-image: linear-gradient(to right, #599be6 0%, #3b53da  100%);
+    margin: 10px;
+    padding: 10px 10px;
+    height: 50px;
+    width: 80px;
+    text-align: center;
+    transition: 1.0;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 10px #eee;
+    border-radius: 30px;
+    border-color: #215bd870;
+    display: block;
+  }
+
+  .btn-gradsim:hover {
+    background-position: right center; /* para mudar a direção */
+    color: rgba(20, 19, 18, 0.952);
+    text-decoration: none;
+  }
