@@ -1,24 +1,21 @@
-<div class="container mtop bg">
-    <div class="row">
-        <div class="col-md-12">
-            <h1 class="text-left text-secundary">Atualizar Tema</h1>
-        </div>
-    </div>
+<div class="container font-edittema mtop bg">
+   
+     <h1 class="text-left text-secundary font-weight-bold p-4">Atualizar Temas</h1>
 
     <div class="row d-flex justify-content-left">
 
-        <div class="col-md-6">
+        <div class="col-md-6 p-3">
             <div class="form-group text-left mb-2">
-                <label for="descricao">Descrição</label>
+                <label for="descricao"><strong>Descrição</strong></label>
                 <input type="text" class="form-control"name="" id="descricao" [(ngModel)]='tema.titulo'>
             </div>
 
            <div class="d-flex justify-content-left mt-5 ml-2">
-            <button class="btn btn-danger mr-4" routerLink='/tema'>Cancelar</button>
-            <button class="btn btn-success" (click)='atualizar()'>Atualizar</button>
+            <button class="btn-gradcancelar mr-4" routerLink='/tema'>Cancelar</button>
+            <button class="btn-gradatualizar" (click)='atualizar()'>Atualizar</button>
            </div> 
 
         </div>
 
-        <div class="col-md-4 mb-5 align-items-center" id="img-bg"></div>
+        <div class="col-md-6 mb-5 align-items-right" id="img-bg"></div>
     </div>

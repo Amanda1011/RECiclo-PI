@@ -1,29 +1,55 @@
-.myButton {
-	box-shadow: 0px 5px 0px 0px #9fb4f2;
-	background-color:#6985b5;
-	border-radius:25px;
-	border:1px solid #4e6096;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:13px;
-	padding:5px 24px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #283966;
-}
-.myButton:hover {
-	background-color:#476e9e;
-}
-.myButton:active {
-	position:relative;
-	top:1px;
-}
-
 .bg{
-	background-color: #fae6a7;
-}
-
-.l1{
 	background-color: #90caf9;
 }
+
+.btn-gradeditar {
+    background-image: linear-gradient(to right, #599be6 0%, #3b53da  100%);
+    margin: 10px;
+    padding: 5px 5px;
+    height: 40px;
+    width: 30%;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 10px #eee;
+    border-radius: 10px;
+    border-color: #215bd870;
+    display: block;
+  }
+
+  .btn-gradeditar:hover {
+    background-position: right center; /* para mudar a direção */
+    color: rgba(20, 19, 18, 0.952);
+    text-decoration: none;
+  }
+
+.btn-gradapagar {
+    background-image: linear-gradient(to right, #ef1a1a 0%, #e56b6b  100%);
+	margin: 10px;
+    padding: 5px 5px;
+    height: 40px;
+    width: 30%;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 10px #eee;
+    border-radius: 10px;
+    border-color: #215bd870;
+    display: block;
+  }
+
+  .btn-gradapagar:hover {
+    background-position: right center; /* para mudar a direção */
+    color: #ef1a1a(20, 19, 18, 0.952);
+    text-decoration: none;
+  }
+
+  .font-temas{
+    font-family: "Lucida Console", "Lucida Console", monospace;
+  }
+
+  .bgtema{
+	background-color: #3b53da;
+  }
