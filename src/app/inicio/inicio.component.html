@@ -3,10 +3,10 @@
     <div class="row bg d-flex align-items-center">
         <div class="col-md-6">
 
-            <div class="row d-flex justify-content-center">
+            <div class="row d-flex justify-content-center font-edit">
                 <div class="col-md-6">
-                    <h1 class="fs">Bem-vindo(a)!</h1>
-                    <h5 class="fs-18">Reduza, Reuse e REcicle</h5>
+                    <h1 class="fs gradtext"><strong>RECICLO</strong></h1>
+                    <h5 class="fs-18">Reduza, Reuse e Repense</h5>
                 </div>
             </div>
 
@@ -148,18 +148,18 @@
 <!-- Modal -->
 <div class="modal fade" id="novaPostagem" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content bgmodal font-weight-bold">
-            <div class="modal-header">
+        <div class="modal-content bgmodal font-weight-bold font-edit">
+            <div class="modal-header marktext">
                 <h5 class="modal-title" id="TituloModalCentralizado">Nova Postagem</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <div class="modal-body font-weight-bold">
+            <div class="modal-body font-weight-bold font-edit">
 
                 <div class="form-group">
                     <label for="foto">Foto</label>
-                    <input [(ngModel)]='postagem.foto'  type="text" class="form-control" id="foto" placeholder="Link da foto obrigatório">
+                    <input [(ngModel)]='postagem.foto'  type="text" class="form-control" id="foto" placeholder="O link da foto é obrigatório">
                 </div>
 
                 <div class="form-group">
@@ -185,8 +185,8 @@
             </div>
 
             <div class="modal-footer">
-                <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
-                <button type="button" class="btn btn-success" (click)='publicar()' data-dismiss="modal">Publicar</button>
+                <button type="button" class="btn btn-gradcancelar" data-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-gradpublicar" (click)='publicar()' data-dismiss="modal">Publicar</button>
             </div>
         </div>
     </div>
