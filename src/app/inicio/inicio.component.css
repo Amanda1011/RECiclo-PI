@@ -1,24 +1,74 @@
-.tamanho-foto{
+.tamanho-foto {
     width: 300px;
     height: 300px;
 }
 
-.bg{
+.bg {
     background-color: #90caf9;
 }
 
-.bgmodal{
+.bgmodal {
     background-color: #D2EFFA;
 }
 
-.marktext{
+.marktext {
     background-color: #FAE6A7;
 }
 
-.fs{
+.fs {
     font-size: 48px;
 }
 
-.font-edit{
+.font-edit {
     font-family: "Lucida Console", "Lucida Console", monospace;
-  }
+}
+
+.btn-gradcancelar {
+    background-image: linear-gradient(to right, #ef1a1a 0%, #e56b6b 100%);
+    margin: 10px;
+    padding: 5px 5px;
+    height: 40px;
+    width: 30%;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 10px #eee;
+    border-radius: 10px;
+    border-color: #215bd870;
+    display: block;
+}
+
+.btn-gradcancelar:hover {
+    background-position: right center;
+    /* para mudar a direção */
+    color: #ef1a1a(20, 19, 18, 0.952);
+    text-decoration: none;
+}
+
+.btn-gradpublicar {
+    background-image: linear-gradient(to right, #599be6 0%, #3b53da 100%);
+    margin: 10px;
+    padding: 5px 5px;
+    height: 40px;
+    width: 30%;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 10px #eee;
+    border-radius: 10px;
+    border-color: #215bd870;
+    display: block;
+}
+
+.btn-gradpubliacar:hover {
+    background-position: right center;
+    /* para mudar a direção */
+    color: rgba(20, 19, 18, 0.952);
+    text-decoration: none;
+}
+
+.gradtext{
+    color:#ef1a1a;
+}
